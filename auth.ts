@@ -47,7 +47,7 @@ export const {
           if(!twoFactorConfirmation) return false;
 
           //Delete Two factor for next sign in
-          await db.TwoFactorConfirmation.delete({
+          await db.twoFactorConfirmation.delete({
             where:{id:twoFactorConfirmation.id}
           })
         }
